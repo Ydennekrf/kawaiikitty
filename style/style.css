@@ -76,15 +76,19 @@ textarea {
   height: 10em;
 }
 button {
-  width:100%;
+  width:10em;
+  margin: 1em;
   border-radius: 50%;
   padding: 15px;
   background-color: #61ad97b7;
 }
 form {
+ 
   margin: auto;
   width: 90%;
 }
+
+
 
 /*----------
 Classes
@@ -128,7 +132,7 @@ contact page classes
   border-radius: 25%;
   border: 1px solid #13366c;
   margin: 2em auto;
-  width: 52vmin;
+  width: 100%;
 }
 .contact-img img {
   display: block;
@@ -138,6 +142,9 @@ contact page classes
   height: 50vmin;
   border-radius: 25%;
   padding: 2vmin;
+}
+.form-button {
+  text-align: center;
 }
 /*---
 fan page classes
@@ -378,10 +385,7 @@ text {
 .page-intro div:nth-child(2) img {
   right: 0;
 }
-button {
-  width: 50%;
-  margin: 5vmin 25%;
-}
+
 .form-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -406,13 +410,13 @@ button {
   body {
     font-size: 130%;
   }
-  .contact-col {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
   fieldset {
     margin-top: 2em;
     height: 50vmin;
+  }
+  .contact-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   .fan-col {
     width: 95%;
@@ -437,7 +441,7 @@ button {
   a{
     position: relative;
   }
-  a:nth-child(1), a:nth-child(2), a:nth-child(3), a:nth-child(4) {
+  a:nth-child(1), a:nth-child(2), a:nth-child(3), a:nth-child(4){
     margin: auto;
     width: 100%;
     height: 15vmin;
@@ -472,26 +476,35 @@ button {
   body {
     font-size: 145%;
   }
+  input[type="text"], input[type="email"] {
+    height: 4em;
+  }
+  textarea {
+    height: 15em;
+  }
+
 }
 
 @media screen and (min-width: 1920px ) {
+  body {
+    font-size: 190%;
+  }
   nav {
     margin: auto;
     width: 1920px;
   }
-  .wrap {
-    width: 1920px;
+  .contact-col {
+    margin: auto;
+    width: 1440px;
   }
-  header {
-    justify-content: center;
+  .form-col {
+    grid-template-columns: 1fr;
   }
   .page-intro {
     margin: auto;
     width: 1440px;
   }
-
-  .contact-col {
-    margin: auto;
-    width: 1440px;
+  .wrap {
+    width: 1920px;
   }
 }
