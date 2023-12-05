@@ -475,7 +475,7 @@ button {
 }
 
 @media screen and (min-width: 1920px ) {
-  .wrap {
+  nav {
     width: 1920px;
   }
   .page-intro {
