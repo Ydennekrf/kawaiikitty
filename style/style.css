@@ -476,6 +476,7 @@ button {
 
 @media screen and (min-width: 1920px ) {
   nav {
+    margin: auto;
     width: 1920px;
   }
   .page-intro {
