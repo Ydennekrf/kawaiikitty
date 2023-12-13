@@ -63,16 +63,7 @@ let screenHandle = () => {
         document.getElementById('curve-b-r').setAttribute('d', "M37,55 A200,200 0 0 1 179,55")
         document.getElementById('txt-curve-b-r').setAttribute('startOffset',"0")
     }
-    if(window.matchMedia('screen and (min-width: 1920px)').matches) {
-        document.getElementById('curve-t-l').setAttribute('d', "M95,55 A200,200 0 0 1 249,80")
-        document.getElementById('txt-curve-t-l').setAttribute('startOffset',"0")
-        document.getElementById('curve-t-r').setAttribute('d', "M105,55 A200,200 0 0 1 249,80")
-        document.getElementById('txt-curve-t-r').setAttribute('startOffset',"3")
-        document.getElementById('curve-b-l').setAttribute('d', "M35,80 A200,200 0 0 1 249,90")
-        document.getElementById('txt-curve-b-l').setAttribute('startOffset',"60")
-        document.getElementById('curve-b-r').setAttribute('d', "M75,65 A200,200 0 0 1 279,110")
-        document.getElementById('txt-curve-b-r').setAttribute('startOffset',"0")
-    }
+ 
 
 };
 //fires event listener any time the screens size changes

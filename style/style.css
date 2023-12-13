@@ -83,7 +83,6 @@ button {
   background-color: #61ad97b7;
 }
 form {
- 
   margin: auto;
   width: 90%;
 }
@@ -93,18 +92,7 @@ form {
 /*----------
 Classes
 ----------*/
-.pink {
-    background-color: #FCCBF4;
-}
-.blue {
-    background-color: #298acd;
-}
-.green {
-    background-color: #61ad98;
-}
-.dark-blue {
-    background-color: #13366c;
-}
+
 /*---
 every page classes
 ---*/
@@ -114,7 +102,8 @@ every page classes
   top: 50vmin;
   height: 30vmin;
   width: 30vmin;
-  rotate: 45deg;
+  transform-origin: center;
+  transform: rotate(25deg);
   overflow: hidden;
 }
 .page-intro div:nth-child(1){
@@ -132,14 +121,14 @@ contact page classes
   border-radius: 25%;
   border: 1px solid #13366c;
   margin: 2em auto;
-  width: 100%;
+  width: 90%;
 }
 .contact-img img {
   display: block;
   top:0;
-  transform: rotate(0deg);
   margin: auto;
   height: 50vmin;
+  width: 50vmin;
   border-radius: 25%;
   padding: 2vmin;
 }
@@ -232,14 +221,16 @@ a{
   left:0; top:0;
   width:47.5%; height:47.5%;
   overflow:hidden;
-  transform:scale(.5) translateZ(0px);
   background:#FCCBF4;
+  transform:scale(.5) translateZ(0px);
   z-index: 2;
 }
 a div{
   height:100%;
   background-size:cover;
   border-radius:inherit;
+  opacity: 0.2;
+  transition: opacity .7s;
   opacity:1;
 }
 a div svg {
@@ -291,7 +282,7 @@ a:nth-child(3) div{
 a:nth-child(4){
   border-radius:0 0 40vmin 0;
   top:52.5%; left:52.5%;
-  transform-origin: -10% -10%;
+  transform-origin: 110% -10%;
   transition:transform .7s .4s;
 }
 a:nth-child(4) div{
@@ -321,7 +312,7 @@ span{
   background-image:url(../assets/images/fefe-logo.png);
   background-size: cover;
   transform:translateZ(0px);
-  z-index: 10;
+  z-index: 3;
 }
 span span{
   position:absolute;
@@ -331,15 +322,14 @@ span span{
   border-radius:0;
 }
 span span:after, span span:before{
-  content:'';
   position:absolute;
-  left:0; top:-1.5vmin;
   width:100%; height:100%;
   background:inherit;
 }
 span span:after{
   top:1.5vmin;
 }
+
 span:hover + .wrap, .wrap:hover{
   transform:scale(0.8) translateZ(0px);
   opacity:1;
@@ -361,17 +351,9 @@ Media Queries
 
 @media screen and (min-width: 375px ) {
     .page-intro div:nth-child(2) img {
-      top: 50vmin;
-      transform: rotate(-20deg);
+      top: 40vmin;
+      transform: rotate(20deg);
     }
-}
-
-@media screen and (min-width: 425px ) {
-  .page-intro div:nth-child(2) img {
-    top: 45vmin;
-    transform: rotate(-20deg);
-  }
-  
 }
 
 @media screen and (min-width: 768px ) {
@@ -383,7 +365,7 @@ text {
   font-size: 30px;
 }
 .page-intro div:nth-child(2) img {
-  right: 0;
+  right: 2em;
 }
 
 .form-col {
@@ -435,7 +417,7 @@ text {
     position: relative;
     padding: 1vmin;
     bottom: 20vmin;
-    width:90vw; height:25vh;
+    width:95%; height:25vh;
 
   }
   a{
@@ -444,8 +426,8 @@ text {
   a:nth-child(1), a:nth-child(2), a:nth-child(3), a:nth-child(4){
     margin: auto;
     width: 100%;
-    height: 15vmin;
-    border-radius:6vmin;
+    height: 6.5em;
+    border-radius:2em;
     top: 15%;
     left: 0;
   }
@@ -466,6 +448,7 @@ text {
   } 
   span{
     top:8vmin;
+    width: 12.5em; height: 12.5em;
   }
   span:hover + .wrap, .wrap:hover{
     transform:scale(1);
@@ -505,6 +488,6 @@ text {
     width: 1440px;
   }
   .wrap {
-    width: 1920px;
+    width: 1282px;
   }
 }
