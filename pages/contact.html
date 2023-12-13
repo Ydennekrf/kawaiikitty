@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Magical site for my cat fefe.">
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
@@ -61,18 +62,19 @@
         <section>
             <div class="contact-col"> 
                 <div>
-                    <form>
+                    <form action="https://webdevbasics.net/scripts/demo.php" method="post">
+                        <p>* indicate required rows</p>
                         <fieldset>
                             <legend><h3>Contact FeFe now!</h3></legend>
                             <div class="form-col">
                                 <div>
                                     
-                                    <label for="name">Full Name</label>
-                                    <input type="text" name="name" id="name" required placeholder="john smith">
+                                    <label for="name">* Full Name</label>
+                                    <input type="text" name="name" id="name" required placeholder="john smith" aria-required="true">
                                 </div>
                                 <div>
-                                    <label for="email">Email</label>
-                                    <input type="email" name="email" id="email" required placeholder="email@email.com">
+                                    <label for="email">* Email</label>
+                                    <input type="email" name="email" id="email" required placeholder="email@email.com" aria-required="true">
                                 </div>
                             </div>
                             <label for="comments">Tell me more</label>
