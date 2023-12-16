@@ -479,6 +479,10 @@ text {
   .contact-col {
     margin: auto;
     width: 1440px;
+    height: 853px;
+  }
+  .contact-img img{
+  height: 100%;
   }
   .form-col {
     grid-template-columns: 1fr;
